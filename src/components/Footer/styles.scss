@@ -1,0 +1,119 @@
+// Footer styles
+
+.footer-container {
+    width: 100%;
+    box-shadow: 5px -8px 28px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 6rem;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    .row-footer-section {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+        justify-content: center;
+        padding-top: 39px;
+        padding-bottom: 39px;
+
+        .col-footer-section {
+            padding: 0 25px;
+            border-right: 1px solid #adadad;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .footer-nav-list {
+                .footer-nav-item {
+                    a {
+                        font-weight: 700;
+                        font-size: 12px;
+                        color: #000;
+                        text-transform: uppercase;
+                        line-height: 19px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .follow-us-text {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    .follow-us-list,
+    .social-icons-list {
+        display: flex;
+        gap: 14px;
+        font-size: 12px;
+    }
+
+    .politicies {
+        font-size: 12px;
+        display: flex;
+        width: 97%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-top: 1px solid #adadad;
+        color: #adadad;
+
+        .copyright-text {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        img {
+            height: 20px;
+        }
+    }
+
+    .credits {
+        background-color: #000;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        padding: 4px 0;
+        text-transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .row-footer-section,
+    .politicies {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-container {
+        .row-footer-section {
+            .col-footer-section{
+                padding: 20px 0;
+                border-right: none;
+                border-top: 1px solid #adadad;
+            }
+        }
+    }
+   
+
+    .politicies {
+        .copyright-text {
+            font-size: 8px;
+        }
+    }
+}
+
+.example {
+    display: grid;
+    transition: all 0.5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
